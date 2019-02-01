@@ -1,0 +1,21 @@
+
+
+    This is the index.html file in the Hugo Two layouts folder.
+        {{- partial "header.html" . -}}
+
+
+    {{.Content}}
+    {{ range .Pages }}
+    <div style="border: 1px solid gray; margin:10px; padding:10px; ">
+        <div style="font-size:20px;">
+            <a href="{{.URL}}">{{.Title}}</a>
+        </div>
+        <p>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</p>
+
+
+        <p>{{.Summary}}</p>
+    </div>
+    {{ end }}
+
+
+    {{ partial "footer.html" . }}

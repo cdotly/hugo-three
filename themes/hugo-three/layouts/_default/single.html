@@ -1,0 +1,39 @@
+{{- partial "header.html" . -}}
+
+
+This is the Single template in the Hugo Two layouts folder.
+{{ with .Params.categories }}
+<ul id="categories">
+    {{ range . }}
+    <li> <a href="{{ `categories/` | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+    {{ end }}
+</ul>
+{{ end }}
+
+<h1>{{.Title}}</h1>
+<h2>{{ $.Param "subtitle"}}</h2>
+
+<h4>{{.Date}}</h4>
+<h4>{{ $.Param "author"}}</h4>
+
+
+{{.Content}}
+
+
+{{ with .Params.tags }}
+<ul id="tags">
+    {{ range . }}
+    <li> <a href="{{ `tags/` | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+    {{ end }}
+</ul>
+{{ end }}
+
+{{ with .Params.levels }}
+<ul id="levels">
+    {{ range . }}
+    <li> <a href="{{ `levels/` | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+    {{ end }}
+</ul>
+{{ end }}
+
+{{- partial "footer.html" . -}}
