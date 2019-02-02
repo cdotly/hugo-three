@@ -1,18 +1,17 @@
 ---
-title: "Installers"
+title: "One Backup Installers"
 date: 2019-01-31T23:10:49-08:00
 draft: true
 author: ""
-slug: 
+slug: installers
 description: 
 keywords: 
-product: 
-- one 
+categories: 
+- one
 weight: 3
-menu: main
 ---
 
-# SpiderOak One Backup
+# SpiderOak Share
 ## Version repository
 Page description goes here. 
 

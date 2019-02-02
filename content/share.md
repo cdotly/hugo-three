@@ -1,16 +1,20 @@
 ---
-title: "Share"
+title: "SpiderOak Share Page"
 date: 2019-01-31T23:10:55-08:00
 draft: true
 author: ""
+type: product
 slug: share
 description: 
 keywords: 
-tags: 
-- share 
-weight: 2
+categories: 
+- share
+products: 
+- one
+weight: 1
 menu: 
-  main
+  main:
+    weight: 1
 ---
 
 # SpiderOak Share

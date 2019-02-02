@@ -1,15 +1,20 @@
 ---
-title: "One"
+title: "SpiderOak One Backup Page"
 date: 2019-01-31T23:10:55-08:00
 draft: true
 author: ""
+type: product
 slug: one
 description: 
 keywords: 
-product: 
-- one 
-weight: 1
-menu: main
+categories: 
+- one
+products: 
+- one
+weight: 3
+menu: 
+  main:
+    weight: 3
 ---
 
 # SpiderOak One Backup

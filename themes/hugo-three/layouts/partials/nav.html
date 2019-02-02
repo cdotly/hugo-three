@@ -1,9 +1,13 @@
 <!-- sidebar start -->
-<aside>
+<!-- <aside>
     <ul>
         This is the main nav.
         {{ range .Site.Menus.main }}
-         
+            <a href="{{ .URL }}" title="{{ .Title }}">
+                {{- .Name -}}
+                {{- with .Page -}}
+                {{- end -}}
+            </a>
         {{ end }}
         
         <li>
@@ -13,4 +17,14 @@
             <a href="#" target="_blank">Hardcoded Link 2</a>
         </li>
     </ul>
-</aside>
+</aside> -->
+
+<div class="navbar-collapse collapse" id="navbar">
+    <ul class="nav navbar-nav navbar-right">
+        {{ range .Site.Menus.main }}
+        <li>
+            <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>

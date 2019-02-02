@@ -3,12 +3,16 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 author: ""
-slug: 
+slug: one
 description: 
 keywords: 
-product: 
+categories: 
+- one
+products: 
 - one 
 weight: 3
-menu: main
+menu: 
+  main:
+    weight: 3
 
 ---
