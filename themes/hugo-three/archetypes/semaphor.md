@@ -2,13 +2,14 @@
 title: {{ replace .Name "-" " " | title }}
 date: {{ .Date }}
 draft: true
-author:
+author: 
 kind: page
-type: 
-layout: 
+type: product
+layout: single
 slug: 
 description: 
 keywords: 
-products:  
+products: 
+- semaphor 
 weight: 
 ---

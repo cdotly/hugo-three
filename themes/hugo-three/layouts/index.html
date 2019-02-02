@@ -3,25 +3,17 @@
     {{- partial "header.html" . -}}
 
 
-    {{.Content}}
-    This is the index.md file in the Hugo Three layouts folder. 
-
-        {{ range (.Pages.ByParam "products") }}
-        <!-- <div style="font-size:20px;">
-            <a href="{{.URL}}">{{.Title}}</a>
-        </div> -->
-
-        <div style="border: 1px solid gray; margin:10px; padding:10px; ">
-            <div style="font-size:20px;">
-                <a href="{{.URL}}">{{.Title}}</a>
-            </div>
-            <p>{{.Summary}}</p>
+        {{.Content}}
+        This is the index.md file in the Hugo Three layouts folder. 
         
-            
-        </div>
-        {{ end }}
-    
- 
+            <ul>
+                <!-- Ranges through content/posts/*.md -->
+                {{ range first 10 ( where .Site.Pages "Type" "landing" ) }}
+                <li>
+                    <a href="{{.URL}}">{{.Title}}</a>
+                </li>
+                {{ end }}
+            </ul>
 
 
-    {{ partial "footer.html" . }}
+    {{- partial "footer.html" . -}}

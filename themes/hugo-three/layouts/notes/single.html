@@ -1,0 +1,33 @@
+{{- partial "header.html" . -}}
+
+
+This is the Single template in the Hugo Three layouts/product folder.
+
+
+
+{{ with .Params.products }}
+<ul id="products">
+    {{ range . }}
+    <li> <a href="{{ `products/` | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+    {{ end }}
+</ul>
+{{ end }}
+
+<h4>{{.Date}}</h4>
+<h4>{{ $.Param "author"}}</h4>
+
+<h1>{{.Title}}</h1>
+<h2>{{ $.Param "subtitle"}}</h2>
+
+{{.Content}}
+
+{{ with .Params.categories }}
+<ul id="categories">
+    {{ range . }}
+    <li> <a href="{{ `categories/` | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+    {{ end }}
+</ul>
+{{ end }}
+
+
+{{- partial "footer.html" . -}}

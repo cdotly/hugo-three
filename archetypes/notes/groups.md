@@ -3,12 +3,13 @@ title: {{ replace .Name "-" " " | title }}
 date: {{ .Date }}
 draft: true
 author:
-kind: page
-type: 
-layout: 
+section: groups
+kind: post
+type: notes
+layout: single
 slug: 
 description: 
 keywords: 
 products:  
-weight: 
+- groups
 ---

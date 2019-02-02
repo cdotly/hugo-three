@@ -1,18 +1,15 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: {{ replace .Name "-" " " | title }}
 date: {{ .Date }}
 draft: true
-author: ""
-slug: one
+kind: page
+type:	post
+layout: 
+author: 
+slug: 
 description: 
 keywords: 
-categories: 
-- one
 products: 
 - one 
 weight: 3
-menu: 
-  main:
-    weight: 3
-
 ---

@@ -1,0 +1,29 @@
+{{- partial "header.html" . -}}
+
+
+<h1>{{.Title}}</h1>
+<h2>{{ $.Param "subtitle"}}</h2>
+
+<h4>{{.Date}}</h4>
+
+This is the layouts/product list file. 
+
+{{.Content}}
+
+<!-- {{ range .Pages }}
+<div style="border: 1px solid gray; margin:10px; padding:10px; ">
+    <div style="font-size:20px;">
+        <a href="{{.URL}}">{{.Title}}</a>
+    </div>
+    <p>{{ dateFormat "2 Jan 2006" .Date }}</p>
+
+
+    <p>{{.Summary}}</p>
+</div>
+{{ end }} -->
+
+{{ range first 10 ( where .Site.RegularPages "Type" "landing" ) }}
+    * {{ .Title }}
+{{ end }}
+
+{{ partial "footer.html" . }}

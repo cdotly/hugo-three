@@ -1,17 +1,21 @@
 ---
-title: "SpiderOak Share Installers"
-date: 2019-01-31T23:10:49-08:00
+title: Share Installers
+date: 2019-02-01T21:12:01-08:00
 draft: true
-author: ""
+author: 
+- 
+kind: page
+type: product
+layout: single
 slug: installers
 description: 
 keywords: 
-categories: 
-- share
-weight: 3
+products: 
+- share 
+weight: 
 ---
 
-# SpiderOak One Backup
+
 ## Version repository
 Page description goes here. 
 
@@ -23,4 +27,3 @@ List of current versions available for download.
 
 ## Linux
 List of current versions available for download. 
-

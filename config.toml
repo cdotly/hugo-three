@@ -6,6 +6,9 @@ enableRobotsTXT = true
 metaDataFormat = "yaml"
 title = "SpiderOak Downloads"
 
+# [params]
+#   mainSections = ["share", "semaphor", "one", "groups", "notes"]
+
 [blackfriday]
 hrefTargetBlank = false
 latexDashes = true
@@ -14,28 +17,34 @@ plainIDAnchors = true
 [[menu.main]]
 identifier = "share"
 name = "Share Menu Item"
-url = "/share"
+url = "/share/"
 weight = 1
 [[menu.main]]
 identifier = "semaphor"
 name = "Semaphor"
-url = "/semaphor"
+url = "/semaphor/"
 weight = 2
 [[menu.main]]
 identifier = "one"
 name = "One Backup"
-url = "/one"
+url = "/one/"
 weight = 3
 [[menu.main]]
 identifier = "groups"
 name = "Groups Backup"
-url = "/groups"
+url = "/groups/"
 weight = 4
+[[menu.main]]
+identifier = "notes"
+name = "Release Notes"
+url = "/notes/"
+weight = 5
 [[menu.main]]
 identifier = "support"
 name = "SpiderOak Support"
 url = "https://spideroak.support/hc/en-us/"
-weight = 5
+weight = 6
+
 
 # [outputFormats.Redirects]
 # baseName = "redirects"
@@ -50,6 +59,7 @@ email = "https://spideroak.support/hc/en-us/requests/new"
 twitter = "spideroak"
 facebook = "SpiderOak"
 vimeo = "spideroak"
+
 [taxonomies]
 author = "authors"
 category = "categories"
