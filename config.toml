@@ -11,37 +11,37 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 
-# [[menu.main]]
-# identifier = "share"
-# name = "Share Menu Item"
-# url = "https://download.spideroak.com/share"
-# weight = 1
-# [[menu.main]]
-# identifier = "semaphor"
-# name = "Semaphor"
-# url = "https://download.spideroak.com/semaphor"
-# weight = 2
-# [[menu.main]]
-# identifier = "one"
-# name = "One Backup"
-# url = "https://download.spideroak.com/one"
-# weight = 3
-# [[menu.main]]
-# identifier = "groups"
-# name = "One Groups"
-# url = "https://download.spideroak.com/groups"
-# weight = 4
+[[menu.main]]
+identifier = "share"
+name = "Share Menu Item"
+url = "/share"
+weight = 1
+[[menu.main]]
+identifier = "semaphor"
+name = "Semaphor"
+url = "/semaphor"
+weight = 2
+[[menu.main]]
+identifier = "one"
+name = "One Backup"
+url = "/one"
+weight = 3
+[[menu.main]]
+identifier = "groups"
+name = "Groups Backup"
+url = "/groups"
+weight = 4
 [[menu.main]]
 identifier = "support"
 name = "SpiderOak Support"
 url = "https://spideroak.support/hc/en-us/"
 weight = 5
 
-[outputFormats.Redirects]
-baseName = "redirects"
-isPlainText = true
-mediatype = "application/json"
-notAlternative = true
+# [outputFormats.Redirects]
+# baseName = "redirects"
+# isPlainText = true
+# mediatype = "application/json"
+# notAlternative = true
 # [outputs]
 # home = ["HTML", "RSS", "OpenSearch", "Algolia", "Redirects"]
 

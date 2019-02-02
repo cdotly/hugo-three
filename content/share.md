@@ -12,9 +12,9 @@ categories:
 products: 
 - one
 weight: 1
-menu: 
-  main:
-    weight: 1
+# menu: 
+#   main:
+#     weight: 1
 ---
 
 # SpiderOak Share
