@@ -6,10 +6,9 @@ author:
 section: share
 kind: post
 type: notes
-layout: single
+layout: share
 slug: 
 description: 
 keywords: 
-products:  
-- share
+releases: share
 ---

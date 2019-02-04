@@ -9,7 +9,6 @@ layout: list
 slug: notes
 description: 
 keywords: 
-products:  
 weight: 
 ---
 

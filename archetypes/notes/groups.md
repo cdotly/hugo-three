@@ -6,10 +6,9 @@ author:
 section: groups
 kind: post
 type: notes
-layout: single
+layout: groups
 slug: 
 description: 
 keywords: 
-products:  
-- groups
+releases: groups
 ---

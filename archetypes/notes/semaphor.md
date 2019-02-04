@@ -6,10 +6,9 @@ author:
 section: semaphor
 kind: post
 type: notes
-layout: single
+layout: semaphor
 slug: 
 description: 
 keywords: 
-products:  
-- semaphor
+releases: semaphor
 ---

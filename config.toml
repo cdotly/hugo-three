@@ -61,7 +61,9 @@ facebook = "SpiderOak"
 vimeo = "spideroak"
 
 [taxonomies]
-author = "authors"
 category = "categories"
 tag = "tags"
+author = "authors"
+release = "releases"
 product = "products"
+

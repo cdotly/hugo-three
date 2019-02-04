@@ -6,10 +6,10 @@ author:
 section: notes
 kind: post
 type: notes
-layout: single
-slug: post-1
+layout: one
+slug: one-1
 description: 
 keywords: 
-products:  
+releases: one
 weight: 
 ---

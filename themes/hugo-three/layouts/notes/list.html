@@ -5,11 +5,13 @@
 <h2>{{ $.Param "subtitle"}}</h2>
 
 
-This is the layouts/release-notes list file. 
+This is the layouts/notes list template. 
+
+
 
 {{.Content}}
 
-{{ range .Pages.ByDate }}
+<!-- {{ range .Pages.ByDate }}
 <div style="border: 1px solid gray; margin:10px; padding:10px; ">
     <div style="font-size:20px;">
         <a href="{{.URL}}">{{.Title}}</a>
@@ -18,6 +20,15 @@ This is the layouts/release-notes list file.
 
     <p>{{.Summary}}</p>
 </div>
-{{ end }}
+{{ end }} -->
+
+<ul>
+    <!-- Ranges through content/notes/*.md -->
+    {{ range ( where .Site.Pages "Type" "notes" ) }}
+    <li>
+        <a href="{{.URL}}">{{.Title}}</a>
+    </li>
+    {{ end }}
+</ul>
 
 {{ partial "footer.html" . }}
