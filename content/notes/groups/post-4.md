@@ -6,10 +6,13 @@ draft: true
 author:
 kind: post
 type: notes
-layout: groups
+layout: single
 slug: groups-1
 description: 
 keywords: 
-releases: groups
+categories: 
+- groups
+releases: 
+- groups
 weight: 
 ---

@@ -6,7 +6,7 @@ author:
 section: share
 kind: post
 type: notes
-layout: share
+layout: single
 slug: 
 description: 
 keywords: 

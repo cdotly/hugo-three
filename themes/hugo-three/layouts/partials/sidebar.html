@@ -1,0 +1,13 @@
+<aside class="sidebar">
+    This is the All sidebar in the Hugo Three layouts partials folder.
+
+    <ul>
+
+            {{ range where .Site.Pages "Params.releases" "share" }}
+            <li>
+                <a href="{{.URL}}">{{.Title}}</a>
+            </li>
+            {{ end }}
+
+    </ul>
+</aside>

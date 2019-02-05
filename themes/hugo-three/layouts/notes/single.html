@@ -1,9 +1,50 @@
 {{- partial "header.html" . -}}
 
 
+<p>This is the Single template in the Hugo Three layouts/notes folder.</p>
+<aside>
+            {{ if eq .Params.releases "share" }}
+            share sidebar
+            
+                {{ range where .Site.Pages "Params.releases" "share" }}
+                    <li>
+                        <a href="{{.URL}}">{{.Title}}</a>
+                    </li>
+                {{ end }}
+            
+            {{ else if eq .Params.releases "one"}}
+                actually, show One
+                
+                {{ range where .Site.Pages "Params.releases" "one" }}
+                    <li>
+                        <a href="{{.URL}}">{{.Title}}</a>
+                    </li>
+                {{ end }}
+            
+            {{ else if eq .Params.releases "groups"}}
+            show groups
+            
+                {{ range where .Site.Pages "Params.releases" "groups" }}
+                    <li>
+                        <a href="{{.URL}}">{{.Title}}</a>
+                    </li>
+                {{ end }}
+            
+            
+            {{ else if eq .Params.releases "semaphor"}}
+            show sema
+                
+                {{ range where .Site.Pages "Params.releases" "semaphor" }}
+                    <li>
+                        <a href="{{.URL}}">{{.Title}}</a>
+                    </li>
+                {{ end }}
+            
+            {{ end }}
+</aside>
 
-This is the Single template in the Hugo Three layouts/product folder.
 
+<h4>{{ $.Param "releases"}}</h4>
 
 <h4>{{.Date}}</h4>
 <h4>{{ $.Param "author"}}</h4>
@@ -11,7 +52,22 @@ This is the Single template in the Hugo Three layouts/product folder.
 <h1>{{.Title}}</h1>
 <h2>{{ $.Param "subtitle"}}</h2>
 
+
+
+
+
+<!-- <ul>
+    {{ $pages := (where .Site.Pages "Params.releases" "share") }}
+    {{ range $pages }}
+    <li>
+        <a href="{{.URL}}">{{.Title}}</a>
+    </li>
+    {{ end }}
+</ul> -->
+
+
 {{.Content}}
+
 
 
 {{- partial "footer.html" . -}}

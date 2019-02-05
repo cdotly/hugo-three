@@ -5,10 +5,11 @@ draft: true
 author:
 kind: post
 type: notes
-layout: share
+layout: single
 slug: share-2
 description: 
 keywords: 
+categories: share
 releases: share
 weight: 
 ---

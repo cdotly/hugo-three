@@ -9,3 +9,8 @@
         {{ end }}
     </ul>
 </aside>
+
+{{ $pages := (where .Site.Pages "Params.releases" "share") }}
+{{ range $pages }}
+{{ .Title }} - {{ .Permalink }}
+{{ end }}

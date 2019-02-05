@@ -1,0 +1,34 @@
+<br>
+<br>
+
+
+{{ $currentPage := . }}
+
+<aside class="sidebar">
+    This is the Share sidebar in the Hugo Three layouts partials folder.
+    
+    <ul>
+        <!-- assigns value to $myVar -->
+
+        {{ $var1 := "share" }}
+        {{ $var2 := "share" }}
+
+
+
+
+        {{ if eq .Params.releases "share" }}
+            current
+        {{ else if eq .Params.releases "one"}}
+            actually, show One
+        {{ else if eq .Params.releases "groups"}}
+            show groups
+        {{ else if eq .Params.releases "semaphor"}}
+            show sema
+        {{ end }}
+
+</aside>
+
+
+
+<br>
+<br>

@@ -5,7 +5,7 @@ draft: true
 author:
 kind: post
 type: notes
-layout: one
+layout: single
 slug: one-2
 description: 
 keywords: 

@@ -6,7 +6,7 @@ author:
 section: semaphor
 kind: post
 type: notes
-layout: semaphor
+layout: single
 slug: 
 description: 
 keywords: 

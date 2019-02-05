@@ -5,7 +5,7 @@ draft: true
 author:
 kind: post
 type: notes
-layout: semaphor
+layout: single
 slug: semaphor-1
 description: 
 keywords: 
