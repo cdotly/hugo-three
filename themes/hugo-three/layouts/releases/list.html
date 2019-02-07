@@ -1,0 +1,32 @@
+{{- partial "header.html" . -}}
+
+
+<h1>{{.Title}}</h1>
+<h2>{{ $.Param "subtitle"}}</h2>
+
+This is the layouts/releases list template. 
+
+{{- partial "filter-notes.html" . -}}
+
+{{.Content}}
+
+
+
+
+
+<!-- orders content according to the "date" field in front matter -->
+<!-- {{ range .Paginator.Pages }}
+
+
+    <div style="border: 1px solid gray; margin:2px; padding:2px; ">
+        <div style="font-size:20px;">
+            <a href="{{.URL}}">{{.Title}}</a>
+        </div>
+        <p>{{ dateFormat "2 Jan 2006" .Date }}</p>
+
+        <p>{{.Summary}}</p>
+    </div>
+{{ end }}  -->
+
+
+{{ partial "footer.html" . }}

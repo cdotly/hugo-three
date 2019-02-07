@@ -5,14 +5,14 @@ draft: true
 author:
 section: notes
 kind: post
-type: notes
+type: releases
 layout: single
 slug: one-1
 description: 
 keywords: 
 categories: 
 - one
-releases: 
+notes: 
 - one
 weight: 
 ---

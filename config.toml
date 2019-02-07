@@ -14,37 +14,73 @@ hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
 
-[[menu.main]]
-identifier = "share"
-name = "Share Menu Item"
-url = "/share/"
-weight = 1
-[[menu.main]]
-identifier = "semaphor"
-name = "Semaphor"
-url = "/semaphor/"
-weight = 2
-[[menu.main]]
-identifier = "one"
-name = "One Backup"
-url = "/one/"
-weight = 3
-[[menu.main]]
-identifier = "groups"
-name = "Groups Backup"
-url = "/groups/"
-weight = 4
-[[menu.main]]
-identifier = "notes"
-name = "Release Notes"
-url = "/notes/"
-weight = 5
-[[menu.main]]
-identifier = "support"
-name = "SpiderOak Support"
-url = "https://spideroak.support/hc/en-us/"
-weight = 6
+[menu]
+    [[menu.main]]
+    identifier = "share"
+    name = "Share Menu Item"
+    url = "/share/"
+    weight = 1
+    [[menu.main]]
+    identifier = "semaphor"
+    name = "Semaphor"
+    url = "/semaphor/"
+    weight = 2
+    [[menu.main]]
+    identifier = "one"
+    name = "One Backup"
+    url = "/one/"
+    weight = 3
+    [[menu.main]]
+    identifier = "groups"
+    name = "Groups Backup"
+    url = "/groups/"
+    weight = 4
+    [[menu.main]]
+    identifier = "releases"
+    name = "Release Notes"
+    url = "/releases/"
+    weight = 5
+    [[menu.main]]
+    identifier = "support"
+    name = "SpiderOak Support"
+    url = "https://spideroak.support/hc/en-us/"
+    weight = 6
 
+
+	[[menu.releases]]
+		identifier = "all"
+		name = "all"
+		title = "all"
+		url = "/"
+		weight = 1
+
+	[[menu.releases]]
+		identifier = "share"
+		name = "share"
+		title = "Share"
+		url = "/"
+		weight = 2
+
+	[[menu.releases]]
+		identifier = "semaphor"
+		name = "semaphor"
+		title = "semaphor"
+		url = "/"
+		weight = 3
+
+	[[menu.releases]]
+		identifier = "one"
+		name = "one"
+		title = "one"
+		url = "/"
+		weight = 4
+
+    [[menu.releases]]
+		identifier = "groups"
+		name = "groups"
+		title = "groups"
+		url = "/"
+		weight = 5
 
 # [outputFormats.Redirects]
 # baseName = "redirects"
@@ -64,5 +100,5 @@ vimeo = "spideroak"
 category = "categories"
 tag = "tags"
 author = "authors"
-release = "releases"
+note = "notes"
 product = "products"

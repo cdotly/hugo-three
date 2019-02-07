@@ -1,18 +1,19 @@
 {{- partial "header.html" . -}}
 
+<p>This is the Single template in the Hugo Three layouts/notes folder.</p>
 
-{{- partial "sidebar-semaphor.html" . -}}
-
-This is the Semaphor template in the Hugo Three layouts/notes folder.
+{{- partial "sidebar.html" . -}}
 
 
-<h4>{{.Date}}</h4>
+<h4>{{ $.Param "notes"}}</h4>
+
 <h4>{{ $.Param "author"}}</h4>
+<h4>{{.Date}}</h4>
+
 
 <h1>{{.Title}}</h1>
 <h2>{{ $.Param "subtitle"}}</h2>
 
 {{.Content}}
-
 
 {{- partial "footer.html" . -}}

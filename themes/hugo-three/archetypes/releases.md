@@ -4,11 +4,10 @@ date: {{ .Date }}
 draft: true
 author:
 kind: post
-type: notes
+type: releases
 layout: single
 slug: 
 description: 
 keywords: 
-products:  
-weight: 
+notes: 
 ---

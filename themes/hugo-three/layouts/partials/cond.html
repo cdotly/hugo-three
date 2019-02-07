@@ -16,13 +16,13 @@
 
 
 
-        {{ if eq .Params.releases "share" }}
+        {{ if eq .Params.notes "share" }}
             current
-        {{ else if eq .Params.releases "one"}}
+        {{ else if eq .Params.notes "one"}}
             actually, show One
-        {{ else if eq .Params.releases "groups"}}
+        {{ else if eq .Params.notes "groups"}}
             show groups
-        {{ else if eq .Params.releases "semaphor"}}
+        {{ else if eq .Params.notes "semaphor"}}
             show sema
         {{ end }}
 

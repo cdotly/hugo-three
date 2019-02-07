@@ -1,13 +1,40 @@
-<aside class="sidebar">
-    This is the All sidebar in the Hugo Three layouts partials folder.
+<aside> 
+    {{ if eq .Params.notes "share" }}
+        share sidebar
 
-    <ul>
+        {{ range where .Site.Pages "Params.notes" "share" }}
+        <li>
+            <a href="{{.URL}}">{{.Title}}</a>
+        </li>
+        {{ end }}
 
-            {{ range where .Site.Pages "Params.releases" "share" }}
-            <li>
-                <a href="{{.URL}}">{{.Title}}</a>
-            </li>
-            {{ end }}
+    {{ else if eq .Params.notes "one" }}
+        actually, show One
 
-    </ul>
+        {{ range where .Site.Pages "Params.notes" "one" }}
+        <li>
+            <a href="{{.URL}}">{{.Title}}</a>
+        </li>
+        {{ end }}
+
+    {{ else if eq .Params.notes "groups" }}
+        show groups
+
+        {{ range where .Site.Pages "Params.notes" "groups" }}
+        <li>
+            <a href="{{.URL}}">{{.Title}}</a>
+        </li>
+        {{ end }}
+
+
+    {{ else if eq .Params.notes "semaphor" }}
+        show sema
+
+        {{ range where .Site.Pages "Params.notes" "semaphor" }}
+        <li>
+            <a href="{{.URL}}">{{.Title}}</a>
+        </li>
+        {{ end }}
+
+    {{ end }}
 </aside>
