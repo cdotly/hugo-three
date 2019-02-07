@@ -1,9 +1,0 @@
-<ul>
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.releases }}
-
-    <li class="{{ if or ($currentPage.IsMenuCurrent `releases` .) ($currentPage.HasMenuCurrent `releases` .) }}active{{ end }}">
-        <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-    </li>
-    {{ end }}
-</ul>

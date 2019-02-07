@@ -6,27 +6,44 @@
 
 This is the layouts/releases list template. 
 
-{{- partial "filter-sample.html" . -}}
-
-{{.Content}}
 
 
+    <h2>SpiderOak Share</h2>
+    <ul>
+        {{ range where .Site.Pages "Params.notes" "share" }}
+        <li>
+            <a href="{{.URL}}">{{ dateFormat "11 Jan 2006" .Date}} {{.Title}}</a>
+        </li>
+        {{ end }}
+    </ul>
 
+    <h2>SpiderOak Semaphor</h2>
+    <ul>
+        {{ range where .Site.Pages "Params.notes" "semaphor" }}
+        <li>
+            <a href="{{.URL}}">{{ dateFormat "11 Jan 2006" .Date}} {{.Title}}</a>
+        </li>
+        {{ end }}
 
+    </ul>
 
-<!-- orders content according to the "date" field in front matter -->
-<!-- {{ range .Paginator.Pages }}
-
-
-    <div style="border: 1px solid gray; margin:2px; padding:2px; ">
-        <div style="font-size:20px;">
-            <a href="{{.URL}}">{{.Title}}</a>
-        </div>
-        <p>{{ dateFormat "2 Jan 2006" .Date }}</p>
-
-        <p>{{.Summary}}</p>
-    </div>
-{{ end }}  -->
+    <h2>SpiderOak One Backup</h2>
+    <ul>
+        {{ range where .Site.Pages "Params.notes" "one" }}
+        <li>
+            <a href="{{.URL}}">{{ dateFormat "11 Jan 2006" .Date}} {{.Title}}</a>
+        </li>
+        {{ end }}
+    </ul>
+        
+    <h2>SpiderOak Groups Backup</h2>
+    <ul>
+        {{ range where .Site.Pages "Params.notes" "groups" }}
+        <li>
+            <a href="{{.URL}}">{{ dateFormat "11 Jan 2006" .Date}} {{.Title}}</a>
+        </li>
+        {{ end }}
+    </ul>
 
 
 {{ partial "footer.html" . }}

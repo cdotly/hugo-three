@@ -9,6 +9,5 @@ layout: single
 slug: groups-2
 description: 
 keywords: 
-notes: 
-- groups
+notes: groups
 ---

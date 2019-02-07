@@ -1,5 +1,5 @@
 ---
-title: Group 4
+title: Groups 4
 subtitle: subtitle of post 4
 date: 2019-02-01T21:40:58-08:00
 draft: true
@@ -10,9 +10,7 @@ layout: single
 slug: groups-1
 description: 
 keywords: 
-categories: 
-- groups
-notes: 
-- groups
+categories: groups
+notes: groups
 weight: 
 ---
