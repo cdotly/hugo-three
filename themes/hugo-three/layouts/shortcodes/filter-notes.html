@@ -1,0 +1,75 @@
+
+
+
+
+
+{{ if .IsNamedParams }}
+    {{ if eq .Params.notes .Get `option` }}
+
+            {{ range where .Site.Pages "Params.notes" (.Get `option`) }}
+            <li>
+                <a href="{{.URL}}">{{.Title}}</a>
+            </li>
+            {{ end }}
+            
+    {{ end }}
+
+    {{ else }}
+
+    {{ range .Paginator.Pages }}
+    
+            <div style="border: 1px solid gray; margin:2px; padding:2px; ">
+                <div style="font-size:20px;">
+                    <a href="{{.URL}}">{{.Title}}</a>
+                </div>
+                <p>{{ dateFormat "2 Jan 2006" .Date }}</p>
+        
+                <p>{{.Summary}}</p>
+            </div>
+        {{ end }} 
+    {{ end }}
+
+
+
+
+
+<aside>
+    {{ if eq .Params.notes "share" }}
+    share sidebar
+
+    {{ range where .Site.Pages "Params.notes" "share" }}
+    <li>
+        <a href="{{.URL}}">{{.Title}}</a>
+    </li>
+    {{ end }}
+
+    {{ else if eq .Params.notes "one" }}
+    actually, show One
+
+    {{ range where .Site.Pages "Params.notes" "one" }}
+    <li>
+        <a href="{{.URL}}">{{.Title}}</a>
+    </li>
+    {{ end }}
+
+    {{ else if eq .Params.notes "groups" }}
+    show groups
+
+    {{ range where .Site.Pages "Params.notes" "groups" }}
+    <li>
+        <a href="{{.URL}}">{{.Title}}</a>
+    </li>
+    {{ end }}
+
+
+    {{ else if eq .Params.notes "semaphor" }}
+    show sema
+
+    {{ range where .Site.Pages "Params.notes" "semaphor" }}
+    <li>
+        <a href="{{.URL}}">{{.Title}}</a>
+    </li>
+    {{ end }}
+
+    {{ end }}
+</aside>

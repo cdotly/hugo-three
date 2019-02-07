@@ -6,7 +6,7 @@ author:
 kind: notes
 type: releases
 layout: list
-slug: releases
+slug: filtered
 description: 
 keywords: 
 weight: 
@@ -17,11 +17,13 @@ weight:
 widget: projects  # Do not modify this line!
 active: true  # Activate this widget? true/false
 folder: releases 
+
 # View.
 #   1 = List
 #   3 = Card
 #   5 = Showcase
 view: 3
+
 # Widget layout
 # Legend: 0 = two columns (default), 1 = single column
 widget_layout: 0
@@ -36,16 +38,16 @@ filter_default: 0
 
 filter:
 - name: All
-  notes: '*'
+  note: '*'
 - name: Share
-  notes: .share
+  note: .share
 - name: Semaphor
-  notes: .semaphor
+  note: .semaphor
 - name: One 
-  notes: .one
+  note: .one
 
 ---
 
-This is the Release Notes index page. 
+This is the filtered page.  
 
 

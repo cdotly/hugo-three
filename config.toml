@@ -58,28 +58,28 @@ plainIDAnchors = true
 		identifier = "share"
 		name = "share"
 		title = "Share"
-		url = "/"
+		url = "#share"
 		weight = 2
 
 	[[menu.releases]]
 		identifier = "semaphor"
 		name = "semaphor"
 		title = "semaphor"
-		url = "/"
+		url = "#semaphor"
 		weight = 3
 
 	[[menu.releases]]
 		identifier = "one"
 		name = "one"
 		title = "one"
-		url = "/"
+		url = "#one"
 		weight = 4
 
     [[menu.releases]]
 		identifier = "groups"
 		name = "groups"
 		title = "groups"
-		url = "/"
+		url = "#groups"
 		weight = 5
 
 # [outputFormats.Redirects]
