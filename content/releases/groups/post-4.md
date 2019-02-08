@@ -3,11 +3,11 @@ title: Groups 4
 subtitle: subtitle of post 4
 date: 2019-02-01T21:40:58-08:00
 draft: true
-author:
+author: katt
 kind: post
 type: releases
 layout: single
-slug: groups-1
+slug: groups-4
 description: 
 keywords: 
 categories: groups

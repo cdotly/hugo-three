@@ -2,7 +2,7 @@
 title: Groups 8
 date: 2019-02-05T16:30:08-08:00
 draft: true
-author:
+author: adamt
 kind: post
 type: releases
 layout: single
@@ -11,3 +11,5 @@ description:
 keywords: 
 notes: groups
 ---
+
+This is a Groups post. 

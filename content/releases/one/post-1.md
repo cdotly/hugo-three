@@ -2,7 +2,7 @@
 title: One post 1
 date: 2019-02-01T21:39:16-08:00
 draft: true
-author:
+author: katt
 section: notes
 kind: post
 type: releases
@@ -12,7 +12,6 @@ description:
 keywords: 
 categories: 
 - one
-notes: 
-- one
+notes: one
 weight: 
 ---

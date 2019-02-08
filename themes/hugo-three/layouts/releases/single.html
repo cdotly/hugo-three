@@ -12,8 +12,21 @@
 
 <h4>{{ $.Param "notes"}}</h4>
 
-<h4>{{ $.Param "author"}}</h4>
+<!-- <h4>{{ $.Param "author"}}</h4> -->
+
+{{- partial "author.html" . -}}
+
+
+<!-- <div>Short Description of {{.Site.Data.author.User0123.Name}}: 
+    <p>{{ index .Site.Data.author.User0123 "Short Description" | markdownify }}</p>
+</div> -->
+
+
+
+
 <h4>{{.Date}}</h4>
+
+
 
 
 <h1>{{.Title}}</h1>

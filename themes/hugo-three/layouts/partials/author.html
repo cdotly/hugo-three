@@ -1,0 +1,17 @@
+
+
+<div>
+{{ if eq .Params.author "adamt" }}
+
+        <!-- Written by {{.Site.Data.author.adamt.name}}: -->
+        <img src="{{ index .Site.Data.author.adamt `src`}}" alt="{{ index .Site.Data.author.adamt `alt`}}">
+        <p>{{ index .Site.Data.author.adamt "name" | markdownify }}</p>
+
+
+{{ else if eq .Params.author "katt" }}
+        <!-- Written by {{.Site.Data.author.katt.name}}: -->
+        <img src="{{ index .Site.Data.author.katt `src` }}" alt="{{ index .Site.Data.author.katt `alt`}}">
+        <p>{{ index .Site.Data.author.katt "name" | markdownify }}</p>
+
+{{ end }}
+</div>

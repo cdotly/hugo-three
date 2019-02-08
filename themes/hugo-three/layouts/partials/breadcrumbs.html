@@ -1,7 +1,14 @@
 <span>
-    <a href="{{.URL}}">{{ humanize .Parent.Title }}</a>
-    / <a href="{{.URL}}">{{ humanize .Params.notes }}</a>
+
+    <a href="{{.Parent.URL}}">{{ humanize .Parent.Title }}</a>
+        <!-- <a href="{{.CurrentSection.URL}}">{{ humanize .CurrentSection.Title }}</a> -->
+    / <a href="{{.URL}}" class="active">{{ humanize .Params.notes }}</a>
 </span>
+
+
+
+
+
 
 
 <!-- <ol class="nav navbar-nav">
