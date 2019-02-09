@@ -2,7 +2,7 @@
 title: Share 1.1.1
 date: 2018-12-26
 draft: true
-author:
+author: adamt
 kind: post
 type: releases
 layout: single
@@ -22,7 +22,7 @@ weight:
 
 - Support for old style on-prem installations.
 
-## Installer Hashes (SHA256):
+## Installer Hashes (SHA256): 
 
 | PLATFORM                    | VERSION | HASH                                                             |
 |-----------------------------|---------|------------------------------------------------------------------|
