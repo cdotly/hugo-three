@@ -47,40 +47,40 @@ plainIDAnchors = true
     weight = 6
 
 
-	[[menu.releases]]
-		identifier = "all"
-		name = "all"
-		title = "all"
-		url = "/"
-		weight = 1
+	# [[menu.releases]]
+	# 	identifier = "all"
+	# 	name = "all"
+	# 	title = "all"
+	# 	url = "/"
+	# 	weight = 1
 
-	[[menu.releases]]
-		identifier = "share"
-		name = "share"
-		title = "Share"
-		url = "#share"
-		weight = 2
+	# [[menu.releases]]
+	# 	identifier = "share"
+	# 	name = "share"
+	# 	title = "Share"
+	# 	url = "#share"
+	# 	weight = 2
 
-	[[menu.releases]]
-		identifier = "semaphor"
-		name = "semaphor"
-		title = "semaphor"
-		url = "#semaphor"
-		weight = 3
+	# [[menu.releases]]
+	# 	identifier = "semaphor"
+	# 	name = "semaphor"
+	# 	title = "semaphor"
+	# 	url = "#semaphor"
+	# 	weight = 3
 
-	[[menu.releases]]
-		identifier = "one"
-		name = "one"
-		title = "one"
-		url = "#one"
-		weight = 4
+	# [[menu.releases]]
+	# 	identifier = "one"
+	# 	name = "one"
+	# 	title = "one"
+	# 	url = "#one"
+	# 	weight = 4
 
-    [[menu.releases]]
-		identifier = "groups"
-		name = "groups"
-		title = "groups"
-		url = "#groups"
-		weight = 5
+  #   [[menu.releases]]
+	# 	identifier = "groups"
+	# 	name = "groups"
+	# 	title = "groups"
+	# 	url = "#groups"
+	# 	weight = 5
 
 # [outputFormats.Redirects]
 # baseName = "redirects"

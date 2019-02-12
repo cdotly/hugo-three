@@ -16,3 +16,9 @@ weight:
 
 # This is the Share index file. 
 This is the index page inside the content folder. 
+
+{{< link href="https://spideroak.com" >}}
+    SpiderOak.com
+{{< /link >}}
+
+

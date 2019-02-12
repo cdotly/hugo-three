@@ -27,3 +27,5 @@ List of current versions available for download.
 
 ## Linux
 List of current versions available for download. 
+
+{{< img src="static/images/author/imgholdr-image" type="png" alt="" caption="author placeholder" >}}

@@ -13,3 +13,19 @@ weight: 0
 
 This is the homepage/landing page for download.SpiderOak.com with type: landing and a list layout. 
 
+
+{{< link
+    href="https://spideroak.com" >}}
+    SpiderOak.com
+{{< /link >}}
+
+{{< target-blank
+    href="https://google.com" >}}
+    Google.com
+{{< /target-blank >}}
+
+{{< img 
+    src="img/imgholdr-image" 
+    type="png" 
+    alt="" 
+    caption="author placeholder" >}} 
