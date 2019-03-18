@@ -22,7 +22,7 @@ plainIDAnchors = true
     weight = 1
     [[menu.main]]
     identifier = "semaphor"
-    name = "Semaphor"
+    name = "Semaphor Messaging"
     url = "/semaphor/"
     weight = 2
     [[menu.main]]
