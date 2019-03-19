@@ -9,7 +9,7 @@ layout: single
 slug: groups-7.2.1
 description: 
 keywords: 
-notes: groups
+products: groups
 ---
 
 This release is only for the Linux .rpm and Mac versions of SpiderOak One and SpiderOak Groups. 7.2.0 RPMs were missing their GPG signature due to a change in our build tools. This release fixes the signing error. The Mac versions had an incorrectCFBundleShortVersionString value which this version corrects. We want to thank all of the users who alerted us to these issues and helped us with troubleshooting.

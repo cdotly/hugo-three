@@ -11,7 +11,7 @@ slug: groups-7-2-0
 description: 
 keywords: 
 categories: groups
-notes: groups
+products: groups
 weight: 
 ---
 

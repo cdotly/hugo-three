@@ -36,14 +36,36 @@ This is the layouts/releases list template.
         {{ end }}
     </ul>
         
-    <h2>SpiderOak Groups Backup</h2>
+    <h2>SpiderOak One & Groups Backup</h2>
     <ul>
-        {{ range where .Site.Pages "Params.notes" "groups" }}
+        {{ range where .Site.Pages "Params.products" "groups" }}
         <li>
-            <a href="{{.URL}}">{{ dateFormat "11 Jan 2006" .Date}} {{.Title}}</a>
+            <a href="{{.URL}}"> {{.Title}}</a>
+            <p>{{ dateFormat "11 Jan 2006" .Date}}</p>
         </li>
         {{ end }}
     </ul>
 
+
+
+    <hr>
+    <br>
+
+        
+        <h2>One and Groups Backup</h2>
+
+
+            {{ range where .Site.Pages "Params.section" "backup" }}
+            <ul class="contents">
+                {{ range .Posts }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+                </li>
+                {{ end }}
+            {{ end }}
+
+
+    <br>
 
 {{ partial "footer.html" . }}

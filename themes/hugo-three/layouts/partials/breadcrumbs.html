@@ -1,8 +1,10 @@
-<span>
 
-    <a href="{{.Parent.URL}}">{{ humanize .Parent.Title }}</a>
-        <!-- <a href="{{.CurrentSection.URL}}">{{ humanize .CurrentSection.Title }}</a> -->
-    / <a href="{{.URL}}" class="active">{{ humanize .Params.notes }}</a>
+
+
+<span>
+    <a href="{{.Parent.URL}}">{{ .Parent.Title | title }}</a>
+    <!-- <a href="{{.CurrentSection.URL}}">{{ humanize .CurrentSection.Title }}</a> -->
+    / <a href="{{ .Permalink }}" class="active">{{ .Params.section | humanize }}</a>
 </span>
 
 

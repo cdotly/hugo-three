@@ -1,19 +1,19 @@
 ---
-title: {{ replace .Name "-" " " | title }}
-slug: {{ .Name | urlize }}
+title: Backup
+slug: backup
 kind: post
 layout: single
 
-date: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
-publishDate: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
-lastmod: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
+date: Mon, 18 Mar 2019 21:41:26 PDT
+publishDate: Mon, 18 Mar 2019 21:41:26 PDT
+lastmod: Mon, 18 Mar 2019 21:41:26 PDT
 draft: true
 author: 
 # adamt
 # katt
 # diegom 
 
-notes: 
+section: 
 # backup
 # file-sharing
 # messaging

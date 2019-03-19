@@ -1,19 +1,19 @@
 ---
-title: {{ replace .Name "-" " " | title }}
-slug: {{ .Name | urlize }}
+title: One Groups 9 0 2
+slug: one-groups-9-0-2
 kind: post
 layout: single
 
-date: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
-publishDate: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
-lastmod: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
+date: Mon, 18 Mar 2019 22:08:39 PDT
+publishDate: Mon, 18 Mar 2019 22:08:39 PDT
+lastmod: Mon, 18 Mar 2019 22:08:39 PDT
 draft: true
-author: 
+author: adamt
 # adamt
 # katt
 # diegom 
 
-notes: 
+notes: backup
 # backup
 # file-sharing
 # messaging

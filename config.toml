@@ -4,7 +4,7 @@ languageCode = "en"
 theme = "hugo-three"
 enableRobotsTXT = true
 metaDataFormat = "yaml"
-title = "SpiderOak Downloads"
+title = "Download SpiderOak Secure Software"
 
 # [params]
 #   mainSections = ["share", "semaphor", "one", "groups", "notes"]
@@ -13,6 +13,12 @@ title = "SpiderOak Downloads"
 hrefTargetBlank = false
 latexDashes = true
 plainIDAnchors = true
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":fileModTime", ":default"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
 
 [menu]
     [[menu.main]]
@@ -100,5 +106,6 @@ vimeo = "spideroak"
 category = "categories"
 tag = "tags"
 author = "authors"
-note = "notes"
 product = "products"
+note = "notes"
+

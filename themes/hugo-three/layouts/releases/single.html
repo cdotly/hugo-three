@@ -2,35 +2,39 @@
 
 <p>This is the Single template in the Hugo Three layouts/notes folder.</p>
 
-{{- partial "breadcrumbs.html" . -}}
+<br>
+<!-- <h4>breadcrumbs</h4>
+{{- partial "breadcrumbs.html" . -}} -->
 
+<!-- <h4>slug</h4>
+<a href="{{ printf `%s` $.Params.Name }}">{{ .Name | urlize }}</a></h3> -->
+
+    <!-- <h4>title</h4> -->
+    <p> {{ $.Params.products | title }} v. {{ $.Params.version | title }} </p>
 <br>
 <br>
 
-{{- partial "sidebar.html" . -}}
+<!-- {{- partial "sidebar.html" . -}} -->
 
 
-<h4>{{ $.Param "notes"}}</h4>
 
-<!-- <h4>{{ $.Param "author"}}</h4> -->
 
-{{- partial "author.html" . -}}
 
+<div class=""> 
+    <h4>Version</h4>
+    <h1>{{ $.Param "version" }}</h1>
+
+    {{- partial "author.html" . -}}
+    <p>{{ $.Param "publishDate" | dateFormat "Mon, 02 Jan 2006" }}</p>
+
+</div>
+
+
+<h1>{{ $.Param "products"}}</h1>
 
 <!-- <div>Short Description of {{.Site.Data.author.User0123.Name}}: 
     <p>{{ index .Site.Data.author.User0123 "Short Description" | markdownify }}</p>
 </div> -->
-
-
-
-
-<h4>{{.Date}}</h4>
-
-
-
-
-<h1>{{.Title}}</h1>
-<h2>{{ $.Param "subtitle"}}</h2>
 
 {{.Content}}
 

@@ -13,12 +13,12 @@ author:
 # katt
 # diegom 
 
-notes: 
+section: messaging
 # backup
 # file-sharing
 # messaging
 # password-manager
-products: 
+products: Semaphor Messaging 
 # One Backup
 # Groups Backup
 # One & Groups Backup
