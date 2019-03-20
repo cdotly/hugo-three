@@ -1,22 +1,22 @@
 ---
-title: {{ replace .Name "-" " " | title }}
-slug: {{ .Name | urlize }}
+title: Semaphor 9 9 1
+slug: semaphor-9-9-1
 kind: post
 type: releases
 layout: single
 
-date: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
-publishDate: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
-lastmod: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
+date: Wed, 20 Mar 2019 09:43:26 PDT
+publishDate: Wed, 20 Mar 2019 09:43:26 PDT
+lastmod: Wed, 20 Mar 2019 09:43:26 PDT
 draft: true
-author: 
+author: adamt
 # adamt
 # katt
 # diegom 
 
 releases: messaging
 products: Semaphor 
-version: 
+version: 9.9.1
 description: 
 keywords: 
 # meta keywords for SEO 

@@ -1,10 +1,17 @@
 <aside>
 
-    {{ $backup := .Paginate (where .Pages "Section" "backup") }}
-    {{ $filesharing := .Paginate (where .Pages "Section" "file-sharing") }}
+    <h4>This is the recent files list of 3. </h4>
+        
+        <ul>
+            {{ range first 3 (where .Site.Pages "Section" .Section) }}
+            <li>
+                <a href="{{.URL}}">{{.Title}}</a>
+            </li>
+            {{ end }}
 
-    
+            <li>
+                <a href="/releases/">View All</a>
+            </li>
+        </ul>
 
-
-    
 </aside>

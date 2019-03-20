@@ -11,39 +11,6 @@ description:
 keywords: 
 weight: 
 
-
-
-# Projects widget.
-widget: projects  # Do not modify this line!
-active: true  # Activate this widget? true/false
-folder: releases 
-# View.
-#   1 = List
-#   3 = Card
-#   5 = Showcase
-view: 3
-# Widget layout
-# Legend: 0 = two columns (default), 1 = single column
-widget_layout: 0
-
-# For Showcase view, flip alternate rows?
-flip_alt_rows: false
-
-# Filter toolbar.
-
-# Default filter index (e.g. 0 corresponds to the first `[[filter]]` instance below).
-filter_default: 0
-
-filter:
-- name: All
-  notes: '*'
-- name: Share
-  notes: .share
-- name: Semaphor
-  notes: .semaphor
-- name: One 
-  notes: .one
-
 ---
 
 This is the Release Notes index page. 

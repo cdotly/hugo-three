@@ -1,30 +1,21 @@
 ---
-title: One Groups 9 0 2
-slug: one-groups-9-0-2
+title: {{ replace .Name "-" " " | title }}
+slug: {{ .Name | urlize }}
 kind: post
+type: releases
 layout: single
 
-date: Mon, 18 Mar 2019 22:08:39 PDT
-publishDate: Mon, 18 Mar 2019 22:08:39 PDT
-lastmod: Mon, 18 Mar 2019 22:08:39 PDT
+date: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
+publishDate: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
+lastmod: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
 draft: true
-author: adamt
+author: 
 # adamt
-# katt
 # diegom 
+# katt
 
-notes: backup
-# backup
-# file-sharing
-# messaging
-# password-manager
-products: 
-# One Backup
-# Groups Backup
-# One & Groups Backup
-# Semaphor Messaging 
-# Share File Sharing
-# Encryptr Password Manager
+releases: password manager
+products: Encryptr 
 version: 
 description: 
 keywords: 

@@ -13,10 +13,12 @@
         <img src="{{ index .Site.Data.author.katt `src` }}" alt="{{ index .Site.Data.author.katt `alt`}}">
         <p>{{ index .Site.Data.author.katt "name" | markdownify }}</p>
 
-        {{ else if eq .Params.author "diegom" }}
+{{ else if eq .Params.author "diegom" }}
         <!-- Written by {{.Site.Data.author.diegom.name}}: -->
         <img src="{{ index .Site.Data.author.diegom `src` }}" alt="{{ index .Site.Data.author.diegom `alt`}}">
         <p>{{ index .Site.Data.author.diegom "name" | markdownify }}</p>
 
 {{ end }}
 </div>
+
+<p>{{ $.Param "publishDate" | dateFormat "Mon, 02 Jan 2006" }}</p>

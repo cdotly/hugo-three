@@ -2,6 +2,7 @@
 title: {{ replace .Name "-" " " | title }}
 slug: {{ .Name | urlize }}
 kind: post
+type: releases
 layout: single
 
 date: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
@@ -10,22 +11,10 @@ lastmod: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
 draft: true
 author: 
 # adamt
-# katt
 # diegom 
+# katt
 
-notes: 
-# backup
-# file-sharing
-# messaging
-# password-manager
-products: 
-# One Backup
-# Groups Backup
-# One & Groups Backup
-# Semaphor Messaging 
-# Share File Sharing
-# Encryptr Password Manager
-version: 
+
 description: 
 keywords: 
 # meta keywords for SEO 

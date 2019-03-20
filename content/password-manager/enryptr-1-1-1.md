@@ -1,21 +1,21 @@
 ---
-title: {{ replace .Name "-" " " | title }}
-slug: {{ .Name | urlize }}
+title: Enryptr 1 1 1
+slug: enryptr-1-1-1
 kind: post
 type: releases
 layout: single
 
-date: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
-publishDate: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
-lastmod: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
+date: Mon, 18 Mar 2019 22:41:00 PDT
+publishDate: Mon, 18 Mar 2019 22:41:00 PDT
+lastmod: Mon, 18 Mar 2019 22:41:00 PDT
 draft: true
 author: 
 # adamt
-# katt
 # diegom 
+# katt
 
-releases: messaging
-products: Semaphor 
+releases: password-manager
+products: Encryptr Password Manager
 version: 
 description: 
 keywords: 

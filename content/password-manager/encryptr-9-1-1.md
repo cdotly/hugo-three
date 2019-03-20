@@ -1,30 +1,21 @@
 ---
-title: Backup
-slug: backup
+title: Encryptr 9 1 1
+slug: encryptr-9-1-1
 kind: post
+type: releases
 layout: single
 
-date: Mon, 18 Mar 2019 21:41:26 PDT
-publishDate: Mon, 18 Mar 2019 21:41:26 PDT
-lastmod: Mon, 18 Mar 2019 21:41:26 PDT
+date: Mon, 18 Mar 2019 22:55:54 PDT
+publishDate: Mon, 18 Mar 2019 22:55:54 PDT
+lastmod: Mon, 18 Mar 2019 22:55:54 PDT
 draft: true
 author: 
 # adamt
-# katt
 # diegom 
+# katt
 
-section: 
-# backup
-# file-sharing
-# messaging
-# password-manager
-products: 
-# One Backup
-# Groups Backup
-# One & Groups Backup
-# Semaphor Messaging 
-# Share File Sharing
-# Encryptr Password Manager
+releases: password-manager
+products: Encryptr Password Manager
 version: 
 description: 
 keywords: 

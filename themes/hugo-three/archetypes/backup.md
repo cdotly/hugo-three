@@ -1,5 +1,5 @@
 ---
-title: {{ replace .Name "-" " " | title }}
+title: {{ replace .Name "-" " " | title  }} 
 slug: {{ .Name | urlize }}
 kind: post
 type: releases
@@ -11,11 +11,14 @@ lastmod: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
 draft: true
 author: 
 # adamt
-# katt
 # diegom 
+# katt
 
-releases: messaging
-products: Semaphor 
+releases: backup
+products:  
+# One
+# Groups
+# One & Groups
 version: 
 description: 
 keywords: 

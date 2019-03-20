@@ -8,63 +8,47 @@ This is the layouts/releases list template.
 
 
 
-    <h2>SpiderOak Share</h2>
+    <h2>Share File Sharing</h2>
     <ul>
-        {{ range where .Site.Pages "Params.notes" "share" }}
+        {{ range where .Site.Pages "Params.releases" "file-sharing" }}
         <li>
-            <a href="{{.URL}}">{{ dateFormat "11 Jan 2006" .Date}} {{.Title}}</a>
+            <a href="{{ .URL }}">{{ .Title }}</a>
+            <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>        
         </li>
         {{ end }}
     </ul>
 
-    <h2>SpiderOak Semaphor</h2>
+    <h2>Semaphor Messaging</h2>
     <ul>
-        {{ range where .Site.Pages "Params.notes" "semaphor" }}
+        {{ range where .Site.Pages "Params.releases" "messaging" }}
         <li>
-            <a href="{{.URL}}">{{ dateFormat "11 Jan 2006" .Date}} {{.Title}}</a>
+            <a href="{{ .URL }}">{{ .Title }}</a>
+            <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
         </li>
         {{ end }}
 
     </ul>
 
-    <h2>SpiderOak One Backup</h2>
+    <h2>One & Groups Backup</h2>
     <ul>
-        {{ range where .Site.Pages "Params.notes" "one" }}
+        {{ range where .Site.Pages "Params.releases" "backup" }}
         <li>
-            <a href="{{.URL}}">{{ dateFormat "11 Jan 2006" .Date}} {{.Title}}</a>
+            <a href="{{ .URL }}">{{ .Title }}</a>
+            <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
         </li>
         {{ end }}
     </ul>
         
-    <h2>SpiderOak One & Groups Backup</h2>
+    <h2>Encryptr Password Manager</h2>
     <ul>
-        {{ range where .Site.Pages "Params.products" "groups" }}
+        {{ range where .Site.Pages "Params.releases" "password-manager" }}
+
         <li>
-            <a href="{{.URL}}"> {{.Title}}</a>
-            <p>{{ dateFormat "11 Jan 2006" .Date}}</p>
+            <a href="{{ .URL }}">{{ .Title }}</a>
+            <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
         </li>
         {{ end }}
     </ul>
-
-
-
-    <hr>
-    <br>
-
-        
-        <h2>One and Groups Backup</h2>
-
-
-            {{ range where .Site.Pages "Params.section" "backup" }}
-            <ul class="contents">
-                {{ range .Posts }}
-                <li>
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-                </li>
-                {{ end }}
-            {{ end }}
-
 
     <br>
 

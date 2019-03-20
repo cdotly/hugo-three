@@ -11,12 +11,12 @@ lastmod: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
 draft: true
 author: 
 # adamt
-# katt
 # diegom 
+# katt
 
-releases: messaging
-products: Semaphor 
-version: 
+releases: file sharing
+products: Share
+version: {{ replace .Name "-" " " | title }}
 description: 
 keywords: 
 # meta keywords for SEO 

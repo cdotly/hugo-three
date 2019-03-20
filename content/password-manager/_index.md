@@ -1,21 +1,31 @@
 ---
-title: {{ replace .Name "-" " " | title }}
-slug: {{ .Name | urlize }}
+title: Password Manager
+slug: password-manager
 kind: post
 type: releases
 layout: single
 
-date: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
-publishDate: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
-lastmod: {{ dateFormat "Mon, 02 Jan 2006 15:04:05 MST" .Date }}
+date: Mon, 18 Mar 2019 21:42:00 PDT
+publishDate: Mon, 18 Mar 2019 21:42:00 PDT
+lastmod: Mon, 18 Mar 2019 21:42:00 PDT
 draft: true
 author: 
 # adamt
 # katt
 # diegom 
 
-releases: messaging
-products: Semaphor 
+section: 
+# backup
+# file-sharing
+# messaging
+# password-manager
+products: 
+# One Backup
+# Groups Backup
+# One & Groups Backup
+# Semaphor Messaging 
+# Share File Sharing
+# Encryptr Password Manager
 version: 
 description: 
 keywords: 

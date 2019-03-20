@@ -1,12 +1,12 @@
 ---
-title: Password Manager
-slug: password-manager
+title: Release Notes for One & Groups Backup 
+slug: backup
 kind: post
 layout: single
 
-date: Mon, 18 Mar 2019 21:42:00 PDT
-publishDate: Mon, 18 Mar 2019 21:42:00 PDT
-lastmod: Mon, 18 Mar 2019 21:42:00 PDT
+date: Mon, 18 Mar 2019 21:41:26 PDT
+publishDate: Mon, 18 Mar 2019 21:41:26 PDT
+lastmod: Mon, 18 Mar 2019 21:41:26 PDT
 draft: true
 author: 
 # adamt
